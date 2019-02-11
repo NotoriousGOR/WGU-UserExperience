@@ -1,6 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .page {
     z-index: 0;
-    width: 100vw;
     height: 100vh;
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.205);
 }
