@@ -1,18 +1,82 @@
+$('[data-toggle="tooltip"]').tooltip()
+
 // Bootstrap Carousel
 $('.carousel').carousel({
-    interval: 500,
-    pause:'hover',
-    wrap: true
+    interval: 4500
 });
 
-var prevScrollpos = window.pageYOffset;
+$('.js-btn').eq(0).click(() => {
+  $('html, body').animate({
+    scrollTop: $('.page').eq(1).offset().top
+  }, 300);
+});
 
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("top-nav").style.top = "0";
+$('.js-btn').eq(1).click(() => {
+  $('html, body').animate({
+    scrollTop: $('.page').eq(2).offset().top
+  }, 300);
+});
+
+$('.js-btn').eq(2).click(() => {
+  $('html, body').animate({
+    scrollTop: $('.page').eq(3).offset().top
+  }, 300);
+});
+
+$('.js-btn').eq(3).click(() => {
+  $('html, body').animate({
+    scrollTop: $('.page').eq(4).offset().top
+  }, 300);
+});
+
+$('.js-btn').eq(4).click(() => {
+  $('html, body').animate({
+    scrollTop: $('.page').eq(5).offset().top
+  }, 300);
+});
+
+// side nav
+
+$('.side-btn').eq(0).click(() => {
+  $('html, body').animate({
+    scrollTop: $('.page').eq(1).offset().top
+  }, 300);
+});
+
+$('.side-btn').eq(1).click(() => {
+  $('html, body').animate({
+    scrollTop: $('.page').eq(2).offset().top
+  }, 300);
+});
+
+$('.side-btn').eq(2).click(() => {
+  $('html, body').animate({
+    scrollTop: $('.page').eq(3).offset().top
+  }, 300);
+});
+
+$('.side-btn').eq(3).click(() => {
+  $('html, body').animate({
+    scrollTop: $('.page').eq(4).offset().top
+  }, 300);
+});
+
+$('.side-btn').eq(4).click(() => {
+  $('html, body').animate({
+    scrollTop: $('.page').eq(5).offset().top
+  }, 300);
+});
+
+var myScrollFunc = function () {
+  var y = window.scrollY;
+  
+  if (y >= 50) {
+    document.getElementById("top-nav").className = "hide";
+    document.getElementById("side-nav").className = "show";
   } else {
-    document.getElementById("top-nav").style.top = "-50px";
+    document.getElementById("top-nav").className = "show";
+    document.getElementById("side-nav").className = "hide";
   }
-  prevScrollpos = currentScrollPos;
 }
+
+window.addEventListener("scroll", myScrollFunc);

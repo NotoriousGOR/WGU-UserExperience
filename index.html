@@ -13,47 +13,65 @@
     <title>Vacation at Taniti</title>
 
 </head>
-<body>
+<body class="d-flex flex-column ">
     <div class="top-nav" id="top-nav">
         <div>
-            <i class="fas fa-image"></i>
+            <a href="#">Taniti</a>
         </div>
         <ul class="nav justify-content-end pb-4">
             <li class="nav-item">
-                <a class="nav-link active" href="#">About</a>
+                <a class="nav-link js-btn" href="#">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Attractions</a>
+                <a class="nav-link js-btn" href="#">Attractions</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Food</a>
+                <a class="nav-link js-btn" href="#">Food</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Travel</a>
+                <a class="nav-link js-btn" href="#">Travel</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link js-btn" href="#">Contact</a>
             </li>
         </ul>
     </div>
 
+    <div id="side-nav">
+        <nav id="side-nav" class="nav flex-column text-center">
+            <a class="pb-4 pt-4" data-toggle="tooltip" data-placement="right" title="Home" href="#"><i class="fas fa-home"></i></a>
+            <a class="pb-4 side-btn" href="#" data-toggle="tooltip" data-placement="right" title="About & FAQ"><i class="fas fa-question"></i></a>
+            <a class="pb-4 side-btn" href="#" data-toggle="tooltip" data-placement="right" title="Attractions"><i class="fas fa-thumbtack"></i></a>
+            <a class="pb-4 side-btn" href="#" data-toggle="tooltip" data-placement="right" title="Food"><i class="fas fa-utensils"></i></a>
+            <a class="pb-4 side-btn" href="#" data-toggle="tooltip" data-placement="right" title="Travel & Transportation"><i class="fas fa-plane-departure"></i></a>
+            <a class="pb-4 side-btn" href="#" data-toggle="tooltip" data-placement="right" title="Contact Us"><i class="fas fa-envelope"></i></a>
+        </nav>
+    </div>
+    
     <!-- Welcome -->
     <div class="page">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner text-center">
                 <div class="carousel-item active">
-                <img class="d-block w-100" src="..." alt="First slide">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                <h1>First slide</h1>
                 </div>
                 <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Second slide">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                <h1>Second slide</h1>
                 </div>
                 <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Third slide">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                <h1>Third slide</h1>
                 </div>
             </div>
         </div>
@@ -61,32 +79,32 @@
 
     <!-- About -->
     <div class="page">
-
+        <h1>about</h1>
     </div>
 
     <!-- Attractions -->
     <div class="page">
-
+        <h1>Attractions</h1>
     </div>
 
     <!-- Food -->
     <div class="page">
-
+        <h1>Food</h1>
     </div>
 
     <!-- Transportation -->
     <div class="page">
-
+        <h1>Transportation</h1>
     </div>
 
     <!-- Contact -->
     <div class="page">
-
+        <h1>Contact</h1>
     </div>
 
-    <script src="index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>

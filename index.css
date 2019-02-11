@@ -1,22 +1,24 @@
 .page {
+    z-index: 0;
     width: 100vw;
     height: 100vh;
-    border: 1px solid black;
-    /* Background gradient provided by: https://uigradients.com/#CoolSky */
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.205);
+}
+
+body {
+    overflow-x: hidden;
+   /* Background gradient provided by: https://uigradients.com/#CoolSky */
     background: #2980B9;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
 }
 
-li {
-    list-style: none;
-}
 #top-nav {
+    z-index: 1;
     background-color: #fff; /* Black background color */
     position: fixed; /* Make it stick/fixed */
-    top: 0; /* Stay on top */
     width: 100%; /* Full width */
-    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    transition: all ease-in-out 0.5s; /* Transition effect when sliding down (and up) */
   }
   
   /* Style the navbar links */
@@ -32,4 +34,30 @@ li {
   #top-nav a:hover {
     text-decoration: underline;
     font-weight: bolder;
+  }
+
+  #side-nav {
+    background-color: rgba(0, 0, 0, 0.411);
+    color: white;
+    width: 3vw;
+    position:fixed;
+    vertical-align: middle;
+    transition: all ease-in-out 1s;
+    z-index: 1;
+  }
+
+  .fas {
+    color: white;
+  }
+
+  .hide {
+    opacity:0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .show {
+    opacity:1;
+   -webkit-transform: translateX(0%);
+    transform: translateX(0%);
   }
