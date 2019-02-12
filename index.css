@@ -64,3 +64,39 @@ body {
    -webkit-transform: translateX(0%);
     transform: translateX(0%);
   }
+
+  #welcomeText {
+    border: black 1px solid;
+    border-radius: 23px;
+    padding: 4%;
+    background: rgba(255, 255, 255, 0.459);
+  }
+
+  #pictureIsland {
+    width: 80%;
+    height: 50vh;
+    background-color: rgb(102, 101, 101);
+    color: azure;
+  }
+
+  #aboutText {
+    width: 80%;
+    border: black 1px solid;
+    border-radius: 23px;
+    padding: 4%;
+    background: rgba(255, 255, 255, 0.459);
+  }
+
+  #faqText {
+    font-size: 0.8rem;
+    height: 100%;
+    width: 80%;
+    border: black 1px solid;
+    border-radius: 23px;
+    padding: 4%;
+    background: rgba(255, 255, 255, 0.459);
+  }
+
+  li {
+    margin-bottom: 5%;
+  }
