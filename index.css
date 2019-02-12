@@ -17,14 +17,14 @@ body {
 }
 
 #top-nav {
+    height: 10vh;
     z-index: 1;
-    background-color: #fff; /* Black background color */
-    position: fixed; /* Make it stick/fixed */
-    width: 100%; /* Full width */
-    transition: all ease-in-out 0.5s; /* Transition effect when sliding down (and up) */
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    transition: all ease-in-out 0.5s;
   }
   
-  /* Style the navbar links */
   #top-nav a {
     float: left;
     display: block;
@@ -69,7 +69,7 @@ body {
     border: black 1px solid;
     border-radius: 23px;
     padding: 4%;
-    background: rgba(255, 255, 255, 0.459);
+    background: rgba(255, 255, 255, 0.863);
   }
 
   #pictureIsland {
@@ -84,7 +84,7 @@ body {
     border: black 1px solid;
     border-radius: 23px;
     padding: 4%;
-    background: rgba(255, 255, 255, 0.459);
+    background: rgba(255, 255, 255, 0.863);
   }
 
   #faqText {
@@ -94,7 +94,7 @@ body {
     border: black 1px solid;
     border-radius: 23px;
     padding: 4%;
-    background: rgba(255, 255, 255, 0.459);
+    background: rgba(255, 255, 255, 0.863);
   }
 
   li {
