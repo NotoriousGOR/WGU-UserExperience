@@ -196,45 +196,76 @@
     <!-- Transportation -->
     <div class="page container-fluid p-4">
         <h1 class="text-center mb-5">Travel & Transportation</h1>
+        <div class="row mb-2">
+            <div class="col">
+                <p class="text-center">Available Flights:</p>
+                <div id="box" class="mx-auto mb-4">
+                </div>
+            </div>
+            <div class="col">
+                <p class="text-center">Available Cruises:</p>
+                <div id="box" class="mx-auto mb-4">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="text-center">Car Rental Companies:</p>
+                <div id="box-2" class="mx-auto">
+                </div>
+            </div>
+            <div class="col">
+                <p class="text-center">Public Transportation Info:</p>
+                <div id="box-2" class="mx-auto p-4">
+                    <ul class="text-center">
+                        <li>Public buses serve Taniti City and run from 5 a.m. to 11 p.m. every day. Private buses serve the rest of the island.</li>
+                        <li>Taxis are available in Taniti City, and rental cars can be rented from a local rental agency near the airport.</li>
+                        <li>Bikes and
+                        helmets are available to rent from several vendors (helmets are required by law).</li>
+                        <li>Taniti City is fairly flat and very
+                        walkable.</li> 
+                        <li>Many tourists stay in the area surrounding Merriton Landing: this area is easy to explore on foot.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Contact -->
     <div class="page container-fluid p-4">
         <h1 class="text-center mb-5">Contact</h1>
         <div class="row">
-            <div class="col-lg-5">
-                <div class="card rounded">
-                    <div class="card-header">
-                        <h3 class="mb-0">Login</h3>
-                    </div>
-                    <div class="card-body">
-                        <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" method="POST">
-                            <div class="form-group">
-                                <label for="uname1">Username</label>
-                                <input type="text" class="form-control form-control-lg rounded-0" name="uname1" id="uname1" required="">
-                                <div class="invalid-feedback">Oops, you missed this one.</div>
+            <div class="col-4 mx-auto">
+                <div class="card justify-content-center contact" style="border-radius: 23px;  background: rgba(255, 255, 255, 0.95);">
+                    <div class="card-body m-4 mt-5">
+                        <form class="form" role="form" id="formLogin" novalidate="" method="POST">
+                            <div class="form-row">
+                                <div class="col-md-4 mx-auto">
+                                    <input style="border-radius: 10px;" type="text" class="form-control pl-4" placeholder="First">
+                                </div>
+                                <div class="col-md-4 mx-auto">
+                                    <input style="border-radius: 10px;" type="text" class="form-control pl-4" placeholder="Last">
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label>Password</label>
-                                <input type="password" class="form-control form-control-lg rounded-0" id="pwd1" required=""
-                                    autocomplete="new-password">
-                                <div class="invalid-feedback">Enter your password too!</div>
+                            <div class="form-row mt-5">
+                                <input style="border-radius: 10px;" type="email" class="form-control mx-auto col-10 pl-4" id="inputPassword4" placeholder="Email">
                             </div>
-                            <div>
-                                <label class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description small text-dark">Remember me on this computer</span>
-                                </label>
+                            <div class="form-row mt-5">
+                                <input style="border-radius: 10px;" type="number" class="form-control mx-auto col-10 pl-4" id="inputPassword4" placeholder="Phone Number">
                             </div>
-                            <button type="submit" class="btn btn-success btn-lg float-right" id="btnLogin">Login</button>
+                            <div class="form-row mt-5">
+                                <textarea   style="border-radius: 10px; resize: none;" class="form-control col-10 mx-auto pl-4" id="textarea" cols="30" rows="10" placeholder="Message"></textarea>
+                            </div>
                         </form>
+                            <button type="button" class="btn btn-success mt-5 pl-3 pr-3">Submit</button>
                     </div>
                     <!--/card-block-->
                 </div>
             </div>
-            <div class="col-lg-5">
-               
+            <div class="col-lg-5 mx-auto">
+                <div class="mx-auto mb-4 contact bg-secondary">
+                    <p style="color:azure;" class="text-center">Map of Island</p>
+                </div>
             </div>
         </div>
     </div>
