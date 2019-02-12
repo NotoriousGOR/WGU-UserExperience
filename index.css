@@ -42,7 +42,7 @@ body {
   #side-nav {
     background-color: rgba(0, 0, 0, 0.411);
     color: white;
-    width: 3vw;
+    width: 5vw;
     position:fixed;
     vertical-align: middle;
     transition: all ease-in-out 1s;
